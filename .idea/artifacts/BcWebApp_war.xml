@@ -1,8 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="war" name="BcWebApp:war">
-    <output-path>$PROJECT_DIR$/BcWebApp/target</output-path>
-    <root id="archive" name="bc-webapp.war">
-      <element id="artifact" artifact-name="BcWebApp:war exploded" />
-    </root>
-  </artifact>
-</component>

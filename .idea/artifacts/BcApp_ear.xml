@@ -1,8 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="ear" name="BcApp:ear">
-    <output-path>$PROJECT_DIR$/BcApp/target</output-path>
-    <root id="archive" name="bc-app.ear">
-      <element id="artifact" artifact-name="BcApp:ear exploded" />
-    </root>
-  </artifact>
-</component>
