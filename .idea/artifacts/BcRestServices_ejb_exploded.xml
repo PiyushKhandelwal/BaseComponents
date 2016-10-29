@@ -1,0 +1,12 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-ejb" name="BcRestServices:ejb exploded">
+    <output-path>$PROJECT_DIR$/BcRestServices/target/bc-restServices</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="BcRestServices/ejb/EJB" />
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/BcRestServices/target/bc-restServices/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="module-output" name="BcRestServices" />
+    </root>
+  </artifact>
+</component>

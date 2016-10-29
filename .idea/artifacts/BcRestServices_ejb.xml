@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="ejb-jar" name="BcRestServices:ejb">
+    <output-path>$PROJECT_DIR$/BcRestServices/target</output-path>
+    <root id="archive" name="bc-restServices.jar">
+      <element id="artifact" artifact-name="BcRestServices:ejb exploded" />
+    </root>
+  </artifact>
+</component>
