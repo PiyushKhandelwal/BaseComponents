@@ -9,6 +9,7 @@
         <module>BcRestServices</module>
         <module>BcWebApp</module>
         <module>BcApp</module>
+        <module>BcControllers</module>
     </modules>
     <packaging>pom</packaging>
 
@@ -25,6 +26,8 @@
         <javaee-api-version>7.0</javaee-api-version>
         <ejb-spec-version>3.2</ejb-spec-version>
         <base-components.version>1.0-SNAPSHOT</base-components.version>
+        <spring.version>4.3.3.RELEASE</spring.version>
+        <jstl.version>1.2</jstl.version>
     </properties>
 
     <dependencies>
@@ -92,6 +95,16 @@
                 <groupId>javax</groupId>
                 <artifactId>javaee-api</artifactId>
                 <version>${javaee-api-version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-webmvc</artifactId>
+                <version>${spring.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>javax.servlet</groupId>
+                <artifactId>jstl</artifactId>
+                <version>${jstl.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

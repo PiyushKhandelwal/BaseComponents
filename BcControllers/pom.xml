@@ -7,20 +7,16 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>bc-restServices</artifactId>
-    <packaging>ejb</packaging>
+    <artifactId>bc-controllers</artifactId>
+    <packaging>jar</packaging>
 
-    <name>bc-restServices</name>
+    <name>bc-controllers</name>
     <url>http://maven.apache.org</url>
-
-    <build>
-        <finalName>${project.artifactId}</finalName>
-    </build>
 
     <dependencies>
         <dependency>
-            <groupId>javax</groupId>
-            <artifactId>javaee-api</artifactId>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-webmvc</artifactId>
         </dependency>
     </dependencies>
 </project>

@@ -16,9 +16,18 @@
             <groupId>javax</groupId>
             <artifactId>javaee-api</artifactId>
         </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-webmvc</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.bc-builder</groupId>
+            <artifactId>bc-controllers</artifactId>
+            <version>${base-components.version}</version>
+        </dependency>
     </dependencies>
 
     <build>
-        <finalName>BaseComponentsWar</finalName>
+        <finalName>${project.artifactId}</finalName>
     </build>
 </project>
