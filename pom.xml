@@ -10,6 +10,7 @@
         <module>BcWebApp</module>
         <module>BcApp</module>
         <module>BcControllers</module>
+        <module>BcServices</module>
     </modules>
     <packaging>pom</packaging>
 

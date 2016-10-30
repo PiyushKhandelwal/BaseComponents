@@ -7,26 +7,20 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>bc-restServices</artifactId>
-    <packaging>ejb</packaging>
-
-    <name>bc-restServices</name>
-    <url>http://maven.apache.org</url>
+    <artifactId>bc-services</artifactId>
+    <packaging>jar</packaging>
 
     <build>
         <finalName>${project.artifactId}</finalName>
     </build>
 
+    <name>bc-services</name>
+    <url>http://maven.apache.org</url>
+
     <dependencies>
         <dependency>
             <groupId>javax</groupId>
             <artifactId>javaee-api</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.bc-builder</groupId>
-            <artifactId>bc-services</artifactId>
-            <version>${base-components.version}</version>
-            <type>ejb</type>
         </dependency>
     </dependencies>
 </project>
