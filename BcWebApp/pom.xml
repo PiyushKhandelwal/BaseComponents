@@ -21,6 +21,10 @@
             <artifactId>spring-webmvc</artifactId>
         </dependency>
         <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>jstl</artifactId>
+        </dependency>
+        <dependency>
             <groupId>com.bc-builder</groupId>
             <artifactId>bc-controllers</artifactId>
             <version>${base-components.version}</version>
