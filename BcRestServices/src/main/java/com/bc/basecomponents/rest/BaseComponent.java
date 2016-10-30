@@ -1,8 +1,9 @@
-package com.bcbuilder.services.rest;
+package com.bc.basecomponents.rest;
 
 import javax.ejb.Stateless;
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
+import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
 
 @Stateless
@@ -11,9 +12,10 @@ public class BaseComponent {
 
     @GET
     @Produces("text/plain")
-    public String getStatus()
+    @Path("/{name}")
+    public String getStatus(@PathParam("name") String param)
     {
-        return "Hello " + System.currentTimeMillis();
+        return "Hello " + param;
     }
 
 }

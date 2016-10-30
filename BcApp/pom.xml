@@ -3,7 +3,7 @@
     <parent>
         <artifactId>base-components</artifactId>
         <groupId>com.bc-builder</groupId>
-        <version>1.0-SNAPSHOT</version>
+        <version>${base-components.version}</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
@@ -33,7 +33,7 @@
     </dependencies>
 
     <build>
-        <finalName>${project.artifactId}</finalName>
+        <finalName>BaseComponentsApp</finalName>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>

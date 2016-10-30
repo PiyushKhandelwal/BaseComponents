@@ -4,7 +4,7 @@
 
     <groupId>com.bc-builder</groupId>
     <artifactId>base-components</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>${base-components.version}</version>
     <modules>
         <module>BcRestServices</module>
         <module>BcWebApp</module>
@@ -24,6 +24,7 @@
         <compiler-plugin-version>3.1</compiler-plugin-version>
         <javaee-api-version>7.0</javaee-api-version>
         <ejb-spec-version>3.2</ejb-spec-version>
+        <base-components.version>1.0-SNAPSHOT</base-components.version>
     </properties>
 
     <dependencies>
