@@ -26,7 +26,7 @@
             <groupId>com.bc-builder</groupId>
             <artifactId>bc-services</artifactId>
             <version>${base-components.version}</version>
-            <type>ejb</type>
+            <type>ejb-client</type>
         </dependency>
     </dependencies>
 </project>

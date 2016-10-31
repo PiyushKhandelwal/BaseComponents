@@ -3,7 +3,7 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jee="http://www.springframework.org/schema/jee"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/jee http://www.springframework.org/schema/jee/spring-jee.xsd">
 
-   <!-- <jee:local-slsb id="baseService" jndi-name="ejblocal:com.bc.basecomponents.services.BaseService"
-                    business-interface="com.bc.basecomponents.services.BaseService"/>-->
+   <jee:local-slsb id="bcService" jndi-name="java:global/bc-app/bc-services-1.0-SNAPSHOT/BcServiceBean"
+                    business-interface="com.bc.basecomponents.services.clients.BcService"/>
 
 </beans>

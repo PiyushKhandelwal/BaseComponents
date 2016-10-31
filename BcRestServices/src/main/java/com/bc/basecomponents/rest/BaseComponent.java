@@ -1,6 +1,6 @@
 package com.bc.basecomponents.rest;
 
-import com.bc.basecomponents.services.BaseService;
+import com.bc.basecomponents.services.clients.BcService;
 
 import javax.ejb.Stateless;
 import javax.inject.Inject;
@@ -14,7 +14,7 @@ import javax.ws.rs.Produces;
 public class BaseComponent {
 
     @Inject
-    private BaseService baseService;
+    private BcService baseService;
 
     @GET
     @Produces("text/plain")

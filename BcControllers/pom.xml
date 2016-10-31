@@ -18,5 +18,11 @@
             <groupId>org.springframework</groupId>
             <artifactId>spring-webmvc</artifactId>
         </dependency>
+        <dependency>
+            <groupId>com.bc-builder</groupId>
+            <artifactId>bc-services</artifactId>
+            <version>${base-components.version}</version>
+            <type>ejb-client</type>
+        </dependency>
     </dependencies>
 </project>
