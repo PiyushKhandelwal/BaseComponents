@@ -1,5 +1,6 @@
 package com.bc.basecomponents.services;
 
+import com.bc.basecomponents.services.clients.BcService;
 
 import javax.ejb.Stateless;
 
