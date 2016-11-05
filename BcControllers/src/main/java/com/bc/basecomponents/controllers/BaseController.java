@@ -14,13 +14,6 @@ public class BaseController {
     @Autowired
     private BcService bcService;
 
-    @RequestMapping(method = RequestMethod.GET)
-    public String welcome(Model model){
-        model.addAttribute("title", "Base Components");
-        model.addAttribute("message", "This is welcome page!");
-        return "welcome";
-    }
-
     @RequestMapping(value = "/login", method = RequestMethod.GET)
     public String login(){
         return "login";
@@ -33,17 +26,10 @@ public class BaseController {
         return "home";
     }
 
-    @RequestMapping(value = "/dba", method = RequestMethod.GET)
-    public String welcomeDba(Model model){
+    @RequestMapping(value = "/home", method = RequestMethod.GET)
+    public String welcome(Model model){
         model.addAttribute("title", "Base Components");
-        model.addAttribute("message", "This is DBA page!");
-        return "home";
-    }
-
-    @RequestMapping(value = "/{name}", method = RequestMethod.GET)
-    public String sayHello(@PathVariable("name") String name, Model model){
-        model.addAttribute("title", "Base Components");
-        model.addAttribute("message", bcService.sayHello(name));
+        model.addAttribute("message", "This is home page!");
         return "home";
     }
 }
