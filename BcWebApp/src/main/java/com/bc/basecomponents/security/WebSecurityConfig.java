@@ -16,6 +16,16 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                 .formLogin()
                 .loginPage("/login")
                 .defaultSuccessUrl("/home",true)
-                .permitAll();
+                .permitAll()
+                .and()
+                .rememberMe()
+                .key("COM_BC_BASECOMPONENTS")
+                .rememberMeParameter("rememberme")
+                .rememberMeCookieName("COM_BC_BASECOMPONENTS")
+                .tokenValiditySeconds(86400)
+                .and()
+                .logout()
+                .logoutSuccessUrl("/login?logout")
+                .deleteCookies("JSESSIONID");
     }
 }
