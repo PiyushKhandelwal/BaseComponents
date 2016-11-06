@@ -15,7 +15,7 @@
     <link href="<c:url value="/resources/css/home.css" />" rel="stylesheet"/>
 </head>
 <body>
-    <c:url value="/logout" var="logoutUrl"/>
+    <c:url value="/logout?logout" var="logoutUrl"/>
     <div class="jumbotron">
         <h1>Base Components</h1>
         <c:if test="${pageContext.request.userPrincipal.name != null}">

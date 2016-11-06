@@ -8,6 +8,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     protected void configure(HttpSecurity http) throws Exception {
         http
                 .authorizeRequests()
+                .antMatchers("/login").permitAll()
                 .antMatchers("/resources/**").permitAll()
                 .antMatchers("/admin/**").hasRole("ADMIN")
                 .antMatchers("/dba/**").hasRole("DBA")
@@ -22,10 +23,6 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                 .key("COM_BC_BASECOMPONENTS")
                 .rememberMeParameter("rememberme")
                 .rememberMeCookieName("COM_BC_BASECOMPONENTS")
-                .tokenValiditySeconds(86400)
-                .and()
-                .logout()
-                .logoutSuccessUrl("/login?logout")
-                .deleteCookies("JSESSIONID");
+                .tokenValiditySeconds(86400);
     }
 }

@@ -19,26 +19,26 @@
     <c:url value="/login" var="loginUrl"/>
     <c:if test="${param.error != null}">
         <div class="alert alert-danger" role="alert">
-            Invalid username and password.
+            <s:message code="alert.invalidUsernameAndPassword"/>
         </div>
     </c:if>
     <c:if test="${param.logout != null}">
         <div class="alert alert-info" role="alert">
-            You have been logged out.
+            <s:message code="alert.logoutmessage"/>
         </div>
     </c:if>
     <spring:form action="${loginUrl}" method="post" cssClass="form-signin">
-        <h2 class="form-signin-heading">Please sign in</h2>
-        <label for="username" class="sr-only">Username</label>
-        <input type="text" name="username" id="username" class="form-control" placeholder="Username"/>
-        <label for="password" class="sr-only">Password</label>
-        <input id="password" class="form-control" placeholder="Password" name="password" type="password">
+        <h2 class="form-signin-heading"><s:message code="login.header"/> </h2>
+        <label for="username" class="sr-only"><s:message code="label.username"/> </label>
+        <input type="text" name="username" id="username" class="form-control" placeholder="<s:message code="label.username"/>"/>
+        <label for="password" class="sr-only"><s:message code="lable.password"/></label>
+        <input id="password" class="form-control" placeholder="<s:message code="lable.password"/>" name="password" type="password">
         <div class="checkbox">
             <label>
-                <input type="checkbox" name="rememberme"> Remember me
+                <input type="checkbox" name="rememberme"> <s:message code="label.rememberme"/>
             </label>
         </div>
-        <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+        <button class="btn btn-lg btn-primary btn-block" type="submit"><s:message code="label.signin"/> </button>
     </spring:form>
 </div>
 </body>
