@@ -1,0 +1,13 @@
+INSERT INTO users VALUES (1, 'SYSADMIN', 'abcd1234');
+INSERT INTO users VALUES (2, 'SYSADMIN1', 'abcd1234');
+INSERT INTO users VALUES (3, 'piyush', 'abcd1234');
+
+
+INSERT INTO roles VALUES (1, 'ADMIN');
+INSERT INTO roles VALUES (2, 'DBA');
+INSERT INTO roles VALUES (3, 'USER');
+
+
+INSERT INTO userroles VALUES (1,1);
+INSERT INTO userroles VALUES (2,2);
+INSERT INTO userroles VALUES (3,3);
