@@ -36,6 +36,34 @@
             <version>1.0-SNAPSHOT</version>
             <type>ejb</type>
         </dependency>
+
+
+        <!-- In order to make skinny wars add shared dependency here-->
+
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-webmvc</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>jstl</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.bc-builder</groupId>
+            <artifactId>bc-security</artifactId>
+            <version>${base-components.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>jcl-over-slf4j</artifactId>
+            <version>1.7.5</version>
+        </dependency>
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-classic</artifactId>
+            <version>1.1.7</version>
+        </dependency>
+
     </dependencies>
 
     <build>
